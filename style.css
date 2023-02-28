@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+}
+.progress{
+    width: 500px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.progress .progress-value{
+    width: 0;
+    height: 30px;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px -10px #fff;
+    animation: load 3s normal forwards infinite;
+}
+@keyframes load {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
